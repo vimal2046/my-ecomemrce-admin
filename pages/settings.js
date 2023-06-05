@@ -65,7 +65,7 @@ return (
         <select value={featuredProductId} onChange={ev => setFeaturedProductId(ev.target.value
             )}>
             {products.length > 0 && products.map(product => (
-                <option value={products._id}>
+                <option key={product._id} value={products._id}>
                    {product.title} 
                 </option>
             ))}
