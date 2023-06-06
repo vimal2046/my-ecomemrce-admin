@@ -8,7 +8,7 @@ import { Admin } from '@/models/Admin';
 
   
 async function isAdminEmail(email) {
- //return true;
+  return true;
   return !! (await Admin.findOne({email}));
 }
 
