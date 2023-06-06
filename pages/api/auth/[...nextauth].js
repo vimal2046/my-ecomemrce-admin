@@ -13,6 +13,8 @@ async function isAdminEmail(email) {
 }
 
  export const  authOptions = {
+      
+    secret: process.env.SECRET,
   
     providers: [
       
